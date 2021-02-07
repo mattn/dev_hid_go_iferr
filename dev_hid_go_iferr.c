@@ -82,15 +82,15 @@ int main(void) {
       { 0, HID_KEY_R },
       { 0, HID_KEY_SPACE },
       { KEYBOARD_MODIFIER_LEFTSHIFT, HID_KEY_1 },
-      { KEYBOARD_MODIFIER_LEFTSHIFT, 0x2d },
+      { KEYBOARD_MODIFIER_LEFTSHIFT, 0x2d }, // FIXME HID_KEY_EQUAL does not work on JIS keyboard
       { 0, HID_KEY_SPACE },
       { 0, HID_KEY_N },
       { 0, HID_KEY_I },
       { 0, HID_KEY_L },
       { 0, HID_KEY_SPACE },
-      { KEYBOARD_MODIFIER_LEFTSHIFT, 0x30 },
+      { KEYBOARD_MODIFIER_LEFTSHIFT, 0x30 }, // FIXME HID_KEY_BRACKET_LEFT does not work on JIS keyboard
       { 0, HID_KEY_RETURN },
-      //{ 0, HID_KEY_TAB },
+      //{ 0, HID_KEY_TAB }, // VSCode insert TAB automatically
       { 0, HID_KEY_R },
       { 0, HID_KEY_E },
       { 0, HID_KEY_T },
@@ -102,7 +102,7 @@ int main(void) {
       { 0, HID_KEY_R },
       { 0, HID_KEY_R },
       { 0, HID_KEY_RETURN },
-      { KEYBOARD_MODIFIER_LEFTSHIFT, 0x31 },
+      { KEYBOARD_MODIFIER_LEFTSHIFT, 0x31 }, // FIXME HID_KEY_BRACKET_RIGHT does not work on JIS keyboard
       { 0, HID_KEY_RETURN },
       { 0, 0 },
     }, *key;
